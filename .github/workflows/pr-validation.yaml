@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: action/checkout@v4
+      - name: install html hint and stylelint
+        run: |
+          npm install stylelint
+          npm install htmlhint
       - name: Lint HTML and CSS
         run : |
           npx stylelint "**/*.css"
