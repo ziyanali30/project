@@ -16,7 +16,7 @@ jobs:
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"
+          path: "./dists"
           name: "build-artifact-development"
 
   deploy_development-job:
